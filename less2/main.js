@@ -100,6 +100,8 @@ let arr1 = [
         password: 4545
     },
 ]
+
+
 console.log(arr1[0].password)
 console.log(arr1[1].password)
 console.log(arr1[2].password)
