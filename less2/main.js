@@ -82,7 +82,7 @@ let book0 = {
         }
     ]
 }
-console.log(book0)
+console.log(book0);
 
 // Zavd 4
 let arr1 = [
