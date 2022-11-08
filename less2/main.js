@@ -99,7 +99,7 @@ let arr1 = [
         username: "Pals777",
         password: 4545
     },
-]
+];
 
 
 console.log(arr1[0].password)
