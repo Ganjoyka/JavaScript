@@ -82,7 +82,7 @@ let book0 = {
         }
     ]
 }
-console.log(book0);
+console.log(book0)
 
 // Zavd 4
 let arr1 = [
@@ -99,9 +99,7 @@ let arr1 = [
         username: "Pals777",
         password: 4545
     },
-];
-
-
+]
 console.log(arr1[0].password)
 console.log(arr1[1].password)
 console.log(arr1[2].password)
