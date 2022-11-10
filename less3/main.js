@@ -1,39 +1,44 @@
-// Zavdannya 1
-let a = `hello`
-let s = `own`
-let d = `com`
-let g = `ua`
-let h = `1`
-let j = `10`
-let k = `-999`
-let l = `123`
-let z = `3.14`
-let x = `2.7`
-let c = `16`
-let t = `true`
-let f = `false`
-console.log(a, s, d, f, g, t, h, j, k, l, z, x, c)
+// - Є змінна х, якій ви надаєте довільне числове значення.
+//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+let x = 21;
+if (x !== 0) {
+    console.log(true)
+} else {
+    console.log(false)
+}
 
-// Zavdannya 2
-let firstName = `Mudrenko`
-let middleName = `Vladyslav`
-let lastName = `Borysovych`
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+// (в першу, другу, третю или четверту частину години).
 
-let person = firstName + ` ` + middleName + ` ` + lastName
-console.log(person)
+let time = 70;
+if (time >= 0 && time <= 15) {
+    console.log("first")
+} else if (time >= 16 && time <= 30) {
+    console.log("second")
+} else if (time >= 31 && time <= 45) {
+    console.log("third")
+} else if (time >= 46 && time <= 60) {
+    console.log("fourth")
+} else {
+    console.log("error")
+}
+// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+let day = 2
+day > 1 && day < 10 ? console.log("first decade") : day > 11 && day < 21 ? console.log("second decade")
+    : day > 21 && day < 31 ? console.log("third decade") : console.log("err");
 
-// Zavdannya 3
-let aa = 100
-console.log(typeof aa)
-let bb = `100`
-console.log(typeof bb)
-let cc = true
-console.log(typeof cc)
 
-// Zavdannya 4
-let firstName1 = prompt(`firstName1`);
-let lastName1 = prompt(`lastName1`);
-let age = prompt(`age`);
-console.log(firstName1)
-console.log(lastName1)
-console.log(age)
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа
+// що заплановано на цей день (можна замість плану на день, назву дня англійською).
+// let x=1
+// switch (
+//     case
+//     )
+
+// - Користувач вводить або має два числа.
+//         Потрібно знайти та вивести максимальне число з тих двох .
+//         Також потрібно врахувати коли введені рівні числа.
+//
+// - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+//         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy
+//         (хибноподыбне, тобто кастується до false)
