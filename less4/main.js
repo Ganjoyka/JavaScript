@@ -1,8 +1,50 @@
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+
+// let users = [
+//     {name: 'vasa', age: 31, status: false, index:1},
+//     {name: 'petya', age: 30, status: true, index:2},
+//     {name: 'kolya', age: 29, status: true, index:3},
+//     {name: 'ola', age: 28, status: false, index:4},
+//     {name: 'max', age: 30, status: true, index:5},
+//     {name: 'anya', age: 31, status: false, index:6},
+//     {name: 'oleg', age: 28, status: false, index:7},
+//     {name: 'andrey', age: 29, status: true, index:8},
+//     {name: 'masha', age: 30, status: true, index:9},
+//     {name: 'ola', age: 31, status: false, index:10},
+// ]
+// for (let user of users) {
+//     document.write(`<div>${user.index} </div>`)
+// }
+
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
+// let users = [
+//     {name: 'vasa', age: 31, status: false, index:1},
+//     {name: 'petya', age: 30, status: true, index:2},
+//     {name: 'kolya', age: 29, status: true, index:3},
+//     {name: 'ola', age: 28, status: false, index:4},
+//     {name: 'max', age: 30, status: true, index:5},
+//     {name: 'anya', age: 31, status: false, index:6},
+//     {name: 'oleg', age: 28, status: false, index:7},
+//     {name: 'andrey', age: 29, status: true, index:8},
+//     {name: 'masha', age: 30, status: true, index:9},
+//     {name: 'ola', age: 31, status: false, index:10},
+// ]
+// for (let user of users) {
+//     document.write(`<div>
+//  <h1>${user.name}</h1>
+//  <h2>${user.index}</h2>
 //
+//  </div>`)
+// }
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+
+
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
+
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
