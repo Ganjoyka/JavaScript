@@ -1,56 +1,33 @@
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
-// let users = [
-//     {name: 'vasa', age: 31, status: false, index:1},
-//     {name: 'petya', age: 30, status: true, index:2},
-//     {name: 'kolya', age: 29, status: true, index:3},
-//     {name: 'ola', age: 28, status: false, index:4},
-//     {name: 'max', age: 30, status: true, index:5},
-//     {name: 'anya', age: 31, status: false, index:6},
-//     {name: 'oleg', age: 28, status: false, index:7},
-//     {name: 'andrey', age: 29, status: true, index:8},
-//     {name: 'masha', age: 30, status: true, index:9},
-//     {name: 'ola', age: 31, status: false, index:10},
-// ]
-// for (let user of users) {
-//     document.write(`<div>${user.index} </div>`)
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>RANDOM</div>`);
 // }
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-// let users = [
-//     {name: 'vasa', age: 31, status: false, index:1},
-//     {name: 'petya', age: 30, status: true, index:2},
-//     {name: 'kolya', age: 29, status: true, index:3},
-//     {name: 'ola', age: 28, status: false, index:4},
-//     {name: 'max', age: 30, status: true, index:5},
-//     {name: 'anya', age: 31, status: false, index:6},
-//     {name: 'oleg', age: 28, status: false, index:7},
-//     {name: 'andrey', age: 29, status: true, index:8},
-//     {name: 'masha', age: 30, status: true, index:9},
-//     {name: 'ola', age: 31, status: false, index:10},
-// ]
-// for (let user of users) {
-//     document.write(`<div>
-//  <h1>${user.name}</h1>
-//  <h2>${user.index}</h2>
-//
-//  </div>`)
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>${i} Books</div>`);
 // }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
-
+// let i = 0;
+// while (i < 20) {
+//     document.write(`<h1> GOOD </h1>`)
+//     i++;
+// }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
+// let i = 0;
+// while (i < 20) {
+//     document.write(`<h1>${i} GOOD </h1>`)
+//     i++;
+// }
 
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
-// Масив:
-//
-//     let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-//
 // ШАБЛОН:
 //     <ul>
 //         <li>ITEM OF ARRAY</li>
@@ -63,13 +40,24 @@
 //     </ul>
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
-//
+// Масив:
+//     let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// document.write(`<ul>`)
+// for(const listOfItem of listOfItems) {
+//     document.write(`<li>${listOfItem}</li>`);
+// }
+// document.write(`</ul>`)
+
 // -----------------------------------------------
 //
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
 // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
-//
+
+// ШАБЛОН
+
+// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+
 // let products = [
 //     {
 //         title: 'milk',
@@ -92,18 +80,18 @@
 //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
 //     },
 // ];
-//
-// ШАБЛОН
-// <div class="product-card">
-//     <h3 class="product-title">TITLE. Price - PRICE</h3>
-// <img src="IMAGE" alt="" class="product-image">
-// </div>
-// Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
-//
-//
-//
+// for (const product of products) {
+//     document.write(`
+//         <div class="product-card">
+//         <h3 class="product-title">TITLE ${product.title} . Price ${product.price}</h3>
+//         <img src="${product.image}" alt="${product.title}" class="product-image">
+//         </div>`)
+// }
+
+
 // --------------------
 //     є масив
+
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
 //     {name: 'petya', age: 30, status: true},
@@ -117,7 +105,31 @@
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
 // ];
+
 // за допомоги циклу вивести:
 //     - користувачів зі статусом true
+
+// for (const user of users) {
+//     if (user.status) {
+//         console.log(user)
+//     }
+//
+// }
+
 // - користувачів зі статусом false
+
+// for (const user of users) {
+//     if (!user.status) {
+//         console.log(user)
+//     }
+//
+// }
+
 // - користувачів які старші за 30 років
+
+// for (const user of users) {
+//     if (user.age > 30) {
+//         console.log(user)
+//     }
+//
+// }
