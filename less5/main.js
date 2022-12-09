@@ -35,10 +35,14 @@
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-// !!!!!!function book{
-//     document.write(`<ul>`)
-//     document.write(`</ul>`)
-// }
+    function book(text) {
+    document.write(`<ul>`)
+        for (let i = 0; i < text.length; i++) {
+            const textElement = text[i];
+            
+        }
+    document.write(`</ul>`)
+}
 
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
@@ -101,7 +105,15 @@
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-// let arr=[1,2,10];
-// function array(arr){
+// const arr = [115, 0, 11, -20];
 //
+// function mat(array) {
+//     let sum = 0;
+//     for (const item of array) {
+//         sum += item;
+//     }
+//     return sum;
 // }
+//
+// let number = mat(arr);
+// console.log(number);
