@@ -47,7 +47,7 @@
 // function book(text,num){
 //     document.write(`<ul>`)
 //     for (let i = 0; i < num; i++) {
-//         document.write(`<li><${text}</li>`)
+//         document.write(`<li>${text}</li>`)
 //     }
 //     document.write(`</ul>`)
 // }
@@ -56,21 +56,48 @@
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-let arr=[1,15,true,`dse`];
-function book(arrey){
-    document.write(`<ul>`)
-    for (const item of arrey) {
-        document.write()
-    }
-    document.write(`</ul>`)
-}
-
+// let arr=[1,15,true,`dse`];
+// function book(array){
+//     document.write(`<ul>`)
+//     for (const item of array) {
+//         document.write(`<li>${item}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// book(arr);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+// const arr = [
+//     {
+//         name: "Anna",
+//         age: 23,
+//     },
+//     {
+//         name: "Vlad",
+//         age: 40,
+//     }
+// ]
+// let objArray = function (array) {
+//     for (const item of array) {
+//         document.write(`<div>${item.name} - ${item.age}</div>`)
+//     }
+// }
+// objArray(arr);
 
 // - створити функцію яка повертає найменьше число з масиву
 
+// const arr = [1, 10, -1552, 0];
+// const minItem = function (array) {
+//     let min = array[0];
+//     for (const item of array) {
+//         if (item < min) {
+//             min = item;
+//         }
+//     }
+//     return min;
+// }
+// console.log(minItem(arr))
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
