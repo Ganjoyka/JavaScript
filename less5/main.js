@@ -35,26 +35,35 @@
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-function book(text,num){
-    document.write(`<ul>`)
-    for (let i = 0; i < num; i++) {
-        document.write(`<li><${text}</li>`)
-    }
-    document.write(`</ul>`)
-}
-book(`Anna`,7)
+// !!!!!!function book{
+//     document.write(`<ul>`)
+//     document.write(`</ul>`)
+// }
 
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-//
-// function book{
-//     document.write(<ul>
-//         <li></li>
-//         </ul>)
+
+// function book(text,num){
+//     document.write(`<ul>`)
+//     for (let i = 0; i < num; i++) {
+//         document.write(`<li><${text}</li>`)
+//     }
+//     document.write(`</ul>`)
 // }
+// book(`Vlad`,5)
+
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+let arr=[1,15,true,`dse`];
+function book(arrey){
+    document.write(`<ul>`)
+    for (const item of arrey) {
+        document.write()
+    }
+    document.write(`</ul>`)
+}
 
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
