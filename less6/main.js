@@ -64,7 +64,6 @@
 // console.log(sortNums(`ascending`, nums));
 // console.log(sortNums(`descending`, nums));
 
-
 // - є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
