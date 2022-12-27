@@ -162,3 +162,42 @@
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
+function Cinderella(name, age, footSize) {
+    this.name = name;
+    this.age = age;
+    this.footSize = footSize;
+}
+
+const cinderella1 = new Cinderella(`Anna`, 15, 35)
+const cinderella2 = new Cinderella(`Dasha`, 27, 36)
+const cinderella3 = new Cinderella(`Masha`, 40, 37)
+const cinderella4 = new Cinderella(`Sasha`, 32, 39)
+const cinderella5 = new Cinderella(`Lena`, 41, 38)
+const cinderella6 = new Cinderella(`Nata`, 53, 40)
+const cinderella7 = new Cinderella(`Sveta`, 26, 42)
+const cinderella8 = new Cinderella(`Lili`, 18, 37)
+const cinderella9 = new Cinderella(`Yana`, 16, 41)
+const cinderella10 = new Cinderella(`Kate`, 29, 36)
+
+const arrayCinderella = [];
+arrayCinderella.push(cinderella1, cinderella2, cinderella3, cinderella4, cinderella5, cinderella6, cinderella7, cinderella8, cinderella9, cinderella10);
+
+class Prince {
+
+    constructor(name, age, findFootSize) {
+        this.name = name;
+        this.age = age;
+        this.findFootSize = findFootSize;
+    }
+}
+
+const prince = new Prince(`Petya`, 45, 37);
+const findCinderellas = (arr.boy)=>
+{
+    for (const item of arr) {
+        if (item.footSize === boy.findFootSize){
+            console.log(`My cinderella is ${item.name}`);
+        }
+    }
+}
+findCinderellas(arrayCinderella,prince)
