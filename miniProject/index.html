@@ -5,16 +5,28 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    const box=document.createElement(`div`);
+    document.body.append(box);
 
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+    .then(info=>info.json())
+    .then(data=>{
+        for (const item of data) {
+            const usDiv = document.createElement(`div`);
+            usDiv.innerText = `${item.id}--${item.name}`;
+            box.append(usDiv);
+        }
+    })
+
+</script>
 </body>
 </html>
 
 // В index.html
 // 1 отримати масив об'єктів з endpoint`а https://jsonplaceholder.typicode.com/users
 // 2 Вивести id,name всіх user в index.html. Окремий блок для кожного user.
-// 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html, котра має детальну інфорацію про об'єкт на який клікнули
-//
-//
+// 3 Додати кожному блоку кнопку/посилання , при кліку на яку відбувається перехід  на сторінку user-details.html, котра має детальну інфорацію про об'єкт на який клікнулиz
 // На странице user-details.html:
 // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
 // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
