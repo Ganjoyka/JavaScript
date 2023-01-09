@@ -12,7 +12,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
     .then(info => {
             for (const item of info) {
                 const usersDiv = document.createElement(`div`);
-                usersDiv.innerText=`${item.id} - ${item.name}`;
+                usersDiv.innerText=`${item.id} - ${item.name} `;
                 box.append(usersDiv);
 
                 const anchor=document.createElement(`a`);
