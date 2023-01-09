@@ -11,12 +11,23 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
                 userDiv.innerText = `${user} ${info[user]}`;
             } else {
-                userDiv.innerText = `${user} `;
+                userDiv.innerText = `${user} -`;
 
                 for (const key in info[user]) {
                     const userInnerDiv = document.createElement(`div`);
-                    if (typeof info[user][key] !== `object`){
-                        userInnerDiv.innerText =`${key} - ${info[user][key]}`
+                    if (typeof info[user][key] !== `object`) {
+                        userInnerDiv.innerText = `${key} - ${info[user][key]}`
+
+                    } else {
+                        userInnerDiv.innerText = `${key} -`;
+
+                        for (const element in info[user][key]) {
+                            const htmlDivElement = document.createElement(`div`);
+                            if (typeof info[user][key][element] !== `object`) {
+                                htmlDivElement.innerText = `${element} ${info[user][key][element]}`
+                            }
+                            userInnerDiv.append(htmlDivElement);
+                        }
                     }
                     userDiv.append(userInnerDiv);
                 }
@@ -24,4 +35,5 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
             document.body.append(userDiv);
         }
-    });
+    })
+;
